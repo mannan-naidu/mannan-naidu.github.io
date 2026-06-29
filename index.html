@@ -232,7 +232,7 @@ footer { padding: 28px 0 64px; font-family: ui-monospace, SFMono-Regular, Menlo,
 <header id="top">
   <h1 class="hero-name">Mannan&nbsp;Naidu</h1>
   <p class="hero-sub">
-    B.Tech ECE, Mumbai University
+    B.Tech Electronics &amp; Computer Science (Hons. Next Gen Data Analytics), Vidyalankar Institute of Technology, Mumbai University
     <span class="dot">·</span> Thane, India
     <span class="hero-badge">Graduating 2026</span>
   </p>
@@ -243,15 +243,16 @@ footer { padding: 28px 0 64px; font-family: ui-monospace, SFMono-Regular, Menlo,
 <!-- ── ABOUT ─────────────────────────────────────────────────── -->
 <section id="about">
   <p class="label sec-label"><span style="color:var(--line)">01 / </span>About</p>
-  <p style="max-width:60ch;margin:0 0 16px;">Final year of a B.Tech in Electronics &amp; Computer Science at Mumbai
-    University, CGPA 9.65. Most of what's on this page came out of hackathon weekends, two internships, and a
+  <p style="max-width:60ch;margin:0 0 16px;">Final year of a B.Tech in Electronics &amp; Computer Science (Honours in
+    Next Gen Data Analytics) at Vidyalankar Institute of Technology, Mumbai University, CGPA 9.56. Most of what's on
+    this page came out of hackathon weekends, two internships, and a
     research project that ended up getting accepted into a Taylor &amp; Francis journal.</p>
   <p style="max-width:60ch;margin:0;">I don't have one fixed lane. I've trained vision models on medical imaging data,
     built SaaS tools that talk to LLMs, shipped mobile apps in 36-hour sprints, and spent a summer learning how
     attackers actually poke at web applications. What ties it together is that I like work where there's an honest
     way to check if it worked — a benchmark, a judge, a working demo.</p>
   <div class="about-aside">
-    <div><b>Education</b> — B.Tech ECE, Mumbai University (2022–26) · CGPA 9.65 · HSC 95.8% · SSC 91.6%</div>
+    <div><b>Education</b> — B.Tech Electronics &amp; Computer Science, Hons. Next Gen Data Analytics, Vidyalankar Institute of Technology, Mumbai University (2022–26) · CGPA 9.56 · HSC 95.8% · SSC 91.6%</div>
     <div><b>Published</b> — ICTEAH 2026, Taylor &amp; Francis (primary author, ROI-based TB detection)</div>
     <div><b>Awards</b> — SIH 2024 &amp; 2025 finalist · Nirman 2025 finalist · MoE IDE Bootcamp 2026</div>
   </div>
@@ -315,9 +316,68 @@ footer { padding: 28px 0 64px; font-family: ui-monospace, SFMono-Regular, Menlo,
     </div>
   </div>
 
-  <!-- 02 MARS-fin -->
+  <!-- 02 AutoCHAD -->
   <div class="proj">
     <div class="idx">02</div>
+    <div>
+      <p class="proj-ctx">MoE IDE Bootcamp 2026</p>
+      <h3>AutoCHAD — natural language to CAD drawings</h3>
+      <p class="why">I wanted to see how far an LLM + RAG pipeline could go in a domain with strict, unforgiving
+        output requirements. CAD drawings aren't like prose — they either comply with the drafting standard or
+        they're wrong.</p>
+      <p class="desc">Converts plain-English engineering briefs into standards-compliant DXF drawings and P&amp;IDs.
+        A RAG layer grounds generation in drafting standards so the output respects line conventions, notation, and
+        symbol placement rules — not just geometric coherence.</p>
+      <div class="link-row">
+        <a class="btn btn-solid btn-lg" href="https://autochad-mr5y.onrender.com" target="_blank" rel="noopener">Open live demo →</a>
+        <a class="btn btn-outline btn-md" href="https://github.com/mannan-naidu/AutoCHAD" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+      <p class="stack-line"><b>Stack:</b> Python · RAG · LLMs · DXF generation</p>
+    </div>
+  </div>
+
+  <!-- 03 Edumitra -->
+  <div class="proj">
+    <div class="idx">03</div>
+    <div>
+      <p class="proj-ctx">HackBuild 2024 · Android APK available</p>
+      <h3>Edumitra — cross-platform learning app</h3>
+      <p class="why">First proper cross-platform mobile app. Hackathon constraints — ship something real on both
+        Android and iOS in 36 hours — were a good forcing function for learning React Native and Expo fast.</p>
+      <p class="desc">Course recommendations, progress tracking, real-time chat. Built with React Native + Expo.
+        The APK is live and installable on any Android device via the link below.</p>
+      <div class="link-row">
+        <a class="btn btn-green btn-lg" href="https://expo.dev/accounts/mannan-naidu/projects/EduMitraApp/builds/7bee543d-b83c-4d1d-947c-e77e71ab7990" target="_blank" rel="noopener">↓ Install Android APK</a>
+        <a class="btn btn-outline btn-md" href="https://github.com/GDGVITM/hackbuild-Hackstreet-boys" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+      <p class="stack-line"><b>Stack:</b> React Native · Expo</p>
+    </div>
+  </div>
+
+  <!-- 04 EcoForge -->
+  <div class="proj">
+    <div class="idx">04</div>
+    <div>
+      <p class="proj-ctx">Smart India Hackathon 2025 — Finalist</p>
+      <h3>EcoForge — lifecycle assessment for metals</h3>
+      <p class="why">SIH 2025 brought a sustainability problem: quantifying the environmental cost difference between
+        virgin ore and recycled metal production. First time working with proper LCA methodology — and an excuse to
+        build a microservices architecture instead of a monolith.</p>
+      <p class="desc">A circularity engine that models the full lifecycle impact of primary and secondary metal
+        production. Next.js frontend, Python backend exposing REST APIs wrapping Brightway (open-source LCA framework)
+        and XGBoost for impact prediction. Services are isolated — adding a new material pipeline doesn't touch
+        existing ones.</p>
+      <div class="link-row">
+        <a class="btn btn-solid btn-lg" href="https://lcastudio-pi.vercel.app/" target="_blank" rel="noopener">Open live demo →</a>
+        <a class="btn btn-outline btn-md" href="https://github.com/mannan-naidu/LCA_Studio" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+      <p class="stack-line"><b>Stack:</b> Next.js · Python · Brightway · XGBoost · REST microservices</p>
+    </div>
+  </div>
+
+  <!-- 05 MARS-fin -->
+  <div class="proj">
+    <div class="idx">05</div>
     <div>
       <p class="proj-ctx">Final-year major project — live demos</p>
       <h3>MARS-Fin — regime-specific financial forecasting</h3>
@@ -339,88 +399,9 @@ footer { padding: 28px 0 64px; font-family: ui-monospace, SFMono-Regular, Menlo,
     </div>
   </div>
 
-  <!-- 03 EcoForge -->
-  <div class="proj">
-    <div class="idx">03</div>
-    <div>
-      <p class="proj-ctx">Smart India Hackathon 2025 — Finalist</p>
-      <h3>EcoForge — lifecycle assessment for metals</h3>
-      <p class="why">SIH 2025 brought a sustainability problem: quantifying the environmental cost difference between
-        virgin ore and recycled metal production. First time working with proper LCA methodology — and an excuse to
-        build a microservices architecture instead of a monolith.</p>
-      <p class="desc">A circularity engine that models the full lifecycle impact of primary and secondary metal
-        production. Next.js frontend, Python backend exposing REST APIs wrapping Brightway (open-source LCA framework)
-        and XGBoost for impact prediction. Services are isolated — adding a new material pipeline doesn't touch
-        existing ones.</p>
-      <div class="link-row">
-        <a class="btn btn-solid btn-lg" href="https://9000-firebase-studio-1764427240379.cluster-ubrd2huk7jh6otbgyei4h62ope.cloudworkstations.dev" target="_blank" rel="noopener">Open live demo →</a>
-        <a class="btn btn-outline btn-md" href="https://github.com/mannan-naidu/EcoForge" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-      <p class="stack-line"><b>Stack:</b> Next.js · Python · Brightway · XGBoost · REST microservices</p>
-    </div>
-  </div>
-
-  <!-- 04 Edumitra -->
-  <div class="proj">
-    <div class="idx">04</div>
-    <div>
-      <p class="proj-ctx">HackBuild 2024 · Android APK available</p>
-      <h3>Edumitra — cross-platform learning app</h3>
-      <p class="why">First proper cross-platform mobile app. Hackathon constraints — ship something real on both
-        Android and iOS in 36 hours — were a good forcing function for learning React Native and Expo fast.</p>
-      <p class="desc">Course recommendations, progress tracking, real-time chat. Built with React Native + Expo.
-        The APK is live and installable on any Android device via the link below.</p>
-      <div class="link-row">
-        <a class="btn btn-green btn-lg" href="https://expo.dev/accounts/mannan-naidu/projects/EduMitraApp/builds/7bee543d-b83c-4d1d-947c-e77e71ab7990" target="_blank" rel="noopener">↓ Install Android APK</a>
-        <a class="btn btn-outline btn-md" href="https://github.com/GDGVITM/hackbuild-Hackstreet-boys" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-      <p class="stack-line"><b>Stack:</b> React Native · Expo</p>
-    </div>
-  </div>
-
-  <!-- 05 AutoCHAD -->
-  <div class="proj">
-    <div class="idx">05</div>
-    <div>
-      <p class="proj-ctx">MoE IDE Bootcamp 2026</p>
-      <h3>AutoCHAD — natural language to CAD drawings</h3>
-      <p class="why">I wanted to see how far an LLM + RAG pipeline could go in a domain with strict, unforgiving
-        output requirements. CAD drawings aren't like prose — they either comply with the drafting standard or
-        they're wrong.</p>
-      <p class="desc">Converts plain-English engineering briefs into standards-compliant DXF drawings and P&amp;IDs.
-        A RAG layer grounds generation in drafting standards so the output respects line conventions, notation, and
-        symbol placement rules — not just geometric coherence.</p>
-      <div class="link-row">
-        <a class="btn btn-solid btn-lg" href="https://autochad-mr5y.onrender.com" target="_blank" rel="noopener">Open live demo →</a>
-        <a class="btn btn-outline btn-md" href="https://github.com/mannan-naidu/AutoCHAD" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-      <p class="stack-line"><b>Stack:</b> Python · RAG · LLMs · DXF generation</p>
-    </div>
-  </div>
-
-  <!-- 06 Innergy -->
+  <!-- 06 Pathify -->
   <div class="proj">
     <div class="idx">06</div>
-    <div>
-      <p class="proj-ctx">Personal project — forecasting research</p>
-      <h3>Innergy — energy consumption forecasting with TSF</h3>
-      <p class="why">I wanted hands-on experience with Time Series Foundation models — pretrained transformer
-        architectures for time series that you fine-tune rather than build from scratch, similar to how LLMs changed
-        NLP. Energy data is a natural fit: strong seasonality, clear weather correlation, real-world utility.</p>
-      <p class="desc">Built on two datasets: the IIITD institutional energy dataset (Springer Nature) and a 26,000-row
-        energy-weather correlation dataset spanning 2018–2023. Models learn the relationship between consumption
-        patterns and weather variables — temperature, humidity, wind. Dataset not committed to the repo due to size.</p>
-      <div class="link-row">
-        <a class="btn btn-outline btn-md" href="https://github.com/mannan-naidu/Innergy" target="_blank" rel="noopener">GitHub →</a>
-        <a class="btn btn-outline btn-md" href="https://springernature.figshare.com/articles/dataset/Energy_dataset_of_IIITD/6007637?file=10797959" target="_blank" rel="noopener">Dataset source →</a>
-      </div>
-      <p class="stack-line"><b>Stack:</b> Python · Time Series Foundation Models · pandas · weather correlation modelling</p>
-    </div>
-  </div>
-
-  <!-- 07 Pathify -->
-  <div class="proj">
-    <div class="idx">07</div>
     <div>
       <p class="proj-ctx">Personal project — backend architecture</p>
       <h3>Pathify — travel recommendation engine</h3>
@@ -436,6 +417,26 @@ footer { padding: 28px 0 64px; font-family: ui-monospace, SFMono-Regular, Menlo,
         <a class="btn btn-outline btn-md" href="https://github.com/mannan-naidu/Pathify-Travel-Recommender" target="_blank" rel="noopener">GitHub →</a>
       </div>
       <p class="stack-line"><b>Stack:</b> Python · Redis (Upstash) · Celery · Render · REST API</p>
+    </div>
+  </div>
+
+  <!-- 07 Innergy -->
+  <div class="proj">
+    <div class="idx">07</div>
+    <div>
+      <p class="proj-ctx">Personal project — forecasting research</p>
+      <h3>Innergy — energy consumption forecasting with TSF</h3>
+      <p class="why">I wanted hands-on experience with Time Series Foundation models — pretrained transformer
+        architectures for time series that you fine-tune rather than build from scratch, similar to how LLMs changed
+        NLP. Energy data is a natural fit: strong seasonality, clear weather correlation, real-world utility.</p>
+      <p class="desc">Built on two datasets: the IIITD institutional energy dataset (Springer Nature) and a 26,000-row
+        energy-weather correlation dataset spanning 2018–2023. Models learn the relationship between consumption
+        patterns and weather variables — temperature, humidity, wind. Dataset not committed to the repo due to size.</p>
+      <div class="link-row">
+        <a class="btn btn-outline btn-md" href="https://github.com/mannan-naidu/Innergy" target="_blank" rel="noopener">GitHub →</a>
+        <a class="btn btn-outline btn-md" href="https://springernature.figshare.com/articles/dataset/Energy_dataset_of_IIITD/6007637?file=10797959" target="_blank" rel="noopener">Dataset source →</a>
+      </div>
+      <p class="stack-line"><b>Stack:</b> Python · Time Series Foundation Models · pandas · weather correlation modelling</p>
     </div>
   </div>
 
